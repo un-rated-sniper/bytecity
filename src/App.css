@@ -94,3 +94,21 @@ footer a {
 footer a:hover {
   color: orange;
 }
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container i {
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-weight: 600;
+  color: #343a40; /* Dark color for text */
+}
+
+.text-primary {
+  color: #007bff; /* Color for the title */
+}

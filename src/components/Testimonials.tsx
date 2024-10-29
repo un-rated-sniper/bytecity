@@ -23,7 +23,10 @@ const Testimonials: React.FC = () => {
   return (
     <section id="services" className="py-5">
       <Container>
-        <h2 className="text-center mb-4">Our Services</h2>
+       
+      <h2 className="text-warning mb-3">WHAT WE DO BEST</h2>
+      <hr style={{ width: '60px', margin: '0 auto', borderTop: '3px solid orange' }} />
+
         <Row className="justify-content-center"> {/* Use Row for proper grid layout */}
           {services.map((service, index) => (
             <Col xs={12} sm={6} md={4} key={index} className="mb-4"> {/* Adjust for different screen sizes */}
