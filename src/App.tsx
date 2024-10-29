@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Discover from './components/Discover';
 import TopBar from './components/TopBar';
 import Message from './components/Message';
+import Testimonials from './components/Testimonials';
 //import CurrentOffers from './components/CurrentOffers';
 
 const App: React.FC = () => {
@@ -16,9 +17,10 @@ const App: React.FC = () => {
       <NavbarComponent />
       <Hero/>
       <Discover />
-      <Services />
       <AboutUs />
       <Message />
+      <Services />
+      <Testimonials/>
       <Footer />
     </div>
   );

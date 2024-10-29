@@ -1,27 +1,13 @@
-import React from 'react';
+import { Container, Button } from 'react-bootstrap';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
-    <section
-      className="hero bg-dark text-white d-flex align-items-center"
-      style={{
-        height: '60vh',
-        backgroundImage: 'url("/hero.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="container">
-        <h1 className="text-left" style={{ fontSize: '2.5rem' }}>
-          ByteCity Tech Solutions
-        </h1>
-        <p className="text-left" style={{ fontSize: '1.2rem' }}>
-          Your One-Stop IT Solutions Partner
-          <button className="btn btn-warning ml-3" style={{ fontSize: '1rem', marginLeft: '10px' }}>
-            Hire Us
-          </button>
-        </p>
-      </div>
+    <section className="hero bg-dark text-white d-flex align-items-center">
+      <Container>
+        <h1>ByteCity Tech Solutions</h1>
+        <p>Your One-Stop IT Solutions Partner</p>
+        <Button variant="warning">Hire Us</Button>
+      </Container>
     </section>
   );
 };
