@@ -7,20 +7,18 @@ import Services from './components/Services';
 import Discover from './components/Discover';
 import TopBar from './components/TopBar';
 import Message from './components/Message';
-import CurrentOffers from './components/CurrentOffers';
+//import CurrentOffers from './components/CurrentOffers';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <TopBar />
       <NavbarComponent />
-      <Hero />
-      <Message />
+      <Hero/>
+      <Discover />
       <Services />
       <AboutUs />
-      <Discover />
-      
-      <CurrentOffers/>
+      <Message />
       <Footer />
     </div>
   );

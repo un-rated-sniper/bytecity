@@ -24,7 +24,6 @@ const Footer: React.FC = () => {
             <h5>Follow Us</h5>
             <p><a href="#" className="text-white">Facebook</a></p>
             <p><a href="#" className="text-white">Twitter</a></p>
-            <p><a href="#" className="text-white">LinkedIn</a></p>
             <div className="mt-3">
               <h5>Newsletter</h5>
               <input type="email" placeholder="Enter your email" className="form-control" />
