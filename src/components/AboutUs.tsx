@@ -1,39 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const AboutUs: React.FC = () => {
-  const cards = [
+  const plans = [
     {
       title: 'Web Design',
-      text: (
-        <ul className="list-unstyled text-center">
-          <li>Web Design</li>
-          <li>Graphic Design</li>
-          <li>Technical Support</li>
-        </ul>
-      ),
-      link: '#',
+      features: [
+        'Web Design',
+        'Graphic Design',
+        'Technical Support',
+      ],
     },
     {
       title: 'Design & Branding',
-      text: (
-        <ul className="list-unstyled text-center">
-          <li>Business Branding</li>
-          <li>3D and 2D Signage</li>
-          <li>Printing Services</li>
-        </ul>
-      ),
-      link: '#',
+      features: [
+        'Business Branding',
+        '3D and 2D Signage',
+        'Printing Services',
+      ],
     },
     {
-      title: 'Social Media Management',
-      text: (
-        <ul className="list-unstyled text-center">
-          <li>Social Media Management</li>
-          <li>Web Content Management</li>
-          <li>Virtual Assistance</li>
-        </ul>
-      ),
-      link: '#',
+      title: 'Media Management',
+      features: [
+        'Social Media Management',
+        'Web Content Management',
+        'Virtual Assistance',
+      ],
     },
   ];
 
@@ -41,17 +32,31 @@ const AboutUs: React.FC = () => {
     <section className="my-5">
       <div className="container">
         <div className="row justify-content-center">
-          {cards.map((card, index) => (
-            <article className="col-md-4 col-sm-6 mb-4" key={index}>
-              <div className="card h-100">
-                <div className="card-body d-flex flex-column align-items-center">
-                  <h5 className="card-title text-center">{card.title}</h5>
-                  <div className="card-text">{card.text}</div>
-                  <a href={card.link} className="btn btn-primary mt-auto">Read More</a>
+          {plans.map((plan, index) => {
+            const [isHovered, setIsHovered] = useState(false);
+
+            return (
+              <article
+                className="col-md-4 col-sm-6 mb-4"
+                key={index}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                <div className="card h-100 card-hover">
+                  <div className="card-body d-flex flex-column align-items-center">
+                    <h5 className="card-title text-center plan-title">{plan.title}</h5>
+                    {isHovered && (
+                      <ul className="list-unstyled text-center features-list">
+                        {plan.features.map((feature, i) => (
+                          <li key={i}>{feature}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
