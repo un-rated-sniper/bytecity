@@ -7,7 +7,7 @@ const Message: React.FC = () => {
       <Container>
         <div className="p-3 mb-2 bg-warning text-dark">
           <h2>
-            Work Smarter with Innovative IT Business Solutions and <span className="primary">AND IDEAS</span>
+            Work Smarter with Innovative IT Business Solutions<span className="primary">AND IDEAS</span>
           </h2>
           <Button variant=" bg-warning" className="mt-3">
           ➞ WORK WITH US

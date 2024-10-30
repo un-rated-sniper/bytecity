@@ -101,18 +101,15 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
                     <option>Consultation</option>
                     <option>Website Design</option>
                   </optgroup>
-                  <optgroup label="Graphic Design">
-                    <option>Adverts Design</option>
-                    <option>Logo Design</option>
-                    <option>Poster Design</option>
-                    <option>Booklets Design</option>
-                    <option>Receipt Book Design</option>
-                  </optgroup>
-                  <optgroup label="Printing Services">
+                  <optgroup label="Graphic Design & Printing Services">
+                    <option>Adverts </option>
+                    <option>Logos </option>
+                    <option>Posters </option>
+                    <option>Booklets </option>
+                    <option>Receipts Book </option>
                     <option>Brochures</option>
                     <option>Branding of Merchandise</option>
                     <option>Business Cards</option>
-                    <option>Chama Booklets Design</option>
                   </optgroup>
                   <optgroup label="Social Media / Web Content Management">
                     <option>X (formerly Twitter)</option>

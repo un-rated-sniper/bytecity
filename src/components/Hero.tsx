@@ -6,7 +6,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onHireUsClick }) => {
   return (
-    <section className="hero bg-dark text-white d-flex align-items-center" style={{ backgroundImage: 'url(/hero-image-01.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="hero bg-dark text-white d-flex align-items-center" style={{ backgroundImage: 'url(/hero-image-02.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <Container>
         <h1>ByteCity Tech Solutions</h1>
         <p>Your One-Stop IT Solutions Partner</p>
