@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 const TopBar: React.FC = () => (
-  <div style={{ backgroundColor: '#DC6526', color: 'white', padding: '5px 0' }}>
+  <div style={{ backgroundColor: 'orange', color: 'black', padding: '5px 0' }}>
     <Container className="d-flex justify-content-center">
       <div className="d-flex">
         <div className="mr-3">bytecitytech.ke@gmail.com</div>

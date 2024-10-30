@@ -1,7 +1,12 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const NavbarComponent: React.FC = () => {
+
+interface HeroProps {
+  onHireUsClick: () => void;
+}
+
+const NavbarComponent:React.FC<HeroProps> = ({ onHireUsClick }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -19,7 +24,7 @@ const NavbarComponent: React.FC = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#services">Our Products & Services</Nav.Link>
             <Nav.Link href="#contact">Contact Us</Nav.Link>
-            <Nav.Link href="#hire-us">Hire Us</Nav.Link>
+             <button onClick={onHireUsClick} className="btn btn-warning">Hire Us</button>
           </Nav>
         </Navbar.Collapse>
       </Container>

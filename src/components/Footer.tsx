@@ -15,7 +15,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <Col md={4} sm={6} className="mb-4">
-            <h5 className="text-warning">Quick Links</h5>
+            <h5 className="text-warning">QUICK LINKS</h5>
             <ul className="list-unstyled">
               <li><a href="#home" className="text-light">Home</a></li>
               <li><a href="#services" className="text-light">Our Services</a></li>
@@ -27,9 +27,9 @@ const Footer = () => {
 
           {/* Contact and Social Media */}
           <Col md={4} sm={6} className="mb-4">
-            <h5 className="text-warning">Contact Us</h5>
-            <p className="text-light">Email: info@bytecitytech.com</p>
-            <p className="text-light">Phone: +123 456 7890</p>
+            <h5 className="text-warning">CONTACT US</h5>
+            <p className="text-light">Email: bytecitytech.ke@gmail.com</p>
+            <p className="text-light">Phone: +254777439049</p>
 
             <h5 className="text-warning mt-3">Follow Us</h5>
             <div>
