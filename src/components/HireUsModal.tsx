@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
 
 interface HireUsModalProps {
@@ -15,17 +15,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
     description: '',
   });
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleInputChange: React.ChangeEventHandler<any> = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -103,7 +93,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
                   as="select"
                   name="section"
                   value={formData.section}
-                  onChange={handleSelectChange as React.ChangeEventHandler<HTMLSelectElement>}
+                  onChange={handleInputChange}
                   className="p-2"
                 >
                   <optgroup label="ICT General">
