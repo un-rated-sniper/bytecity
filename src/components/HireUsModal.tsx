@@ -14,16 +14,9 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
     section: 'Web Design',
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const { name, value } = e.target;
+  const handleInputChange = (e: React.ChangeEvent<HTMLElement>) => {
+    const target = e.target as HTMLInputElement | HTMLSelectElement;
+    const { name, value } = target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value,
@@ -76,7 +69,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
               as="select"
               name="section"
               value={formData.section}
-              
+              onChange={handleInputChange}
             >
               <option>Web Design</option>
               <option>Graphic Design</option>
