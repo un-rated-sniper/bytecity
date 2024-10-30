@@ -35,7 +35,6 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add your form submission logic here
     console.log(formData);
   };
 
@@ -104,7 +103,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
                   as="select"
                   name="section"
                   value={formData.section}
-                  onChange={handleSelectChange}
+                  onChange={handleSelectChange as React.ChangeEventHandler<HTMLSelectElement>}
                   className="p-2"
                 >
                   <optgroup label="ICT General">
