@@ -15,7 +15,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <Col md={4} sm={6} className="mb-4">
-            <h5 className="text-warning">QUICK LINKS</h5>
+            <h5 className="text-warning">Quick Links</h5>
             <ul className="list-unstyled">
               <li><a href="#home" className="text-light">Home</a></li>
               <li><a href="#services" className="text-light">Our Services</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
           </Col>
         </Row>
         <hr className="bg-light" />
-        <p className="text-center text-light mb-0">© {new Date().getFullYear()} ByteCity Tech Computer Solutions. All rights reserved.</p>
+        <p className="text-center text-light mb-0">© {new Date().getFullYear()} . All rights reserved.</p>
       </Container>
     </footer>
   );
