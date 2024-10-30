@@ -76,7 +76,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
               as="select"
               name="section"
               value={formData.section}
-              onChange={handleSelectChange}
+              
             >
               <option>Web Design</option>
               <option>Graphic Design</option>
