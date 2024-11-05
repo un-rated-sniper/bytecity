@@ -71,9 +71,10 @@ const HotSale: React.FC = () => {
                 <li>Top-notch security features</li>
                 <li>Optional WWAN connectivity</li>
               </ul>
-              <Button variant="primary" className="mt-3" block>
-                Order Now
-              </Button>
+              <<Button variant="primary" className="mt-3 btn-block">
+  Order Now
+</Button>
+         
             </Col>
           </Row>
         </Modal.Body>
