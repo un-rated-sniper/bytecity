@@ -18,7 +18,7 @@ const saleItems: SaleItem[] = [
 ];
 
 // HotSales component definition
-const HotSales: React.FC = () => {
+const HotSale: React.FC = () => {
   // State to track selected item and modal open/close status
   const [selectedItem, setSelectedItem] = useState<SaleItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -87,4 +87,4 @@ const HotSales: React.FC = () => {
   );
 };
 
-export default HotSales;
+export default HotSale;
