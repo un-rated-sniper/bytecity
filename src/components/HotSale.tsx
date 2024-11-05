@@ -1,89 +1,84 @@
 import React, { useState } from 'react';
-import { Box, Typography, List, ListItem, ListItemButton, Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
 
-// Define the type for each sale item
-type SaleItem = {
+interface Item {
   id: number;
   name: string;
-  specs: string;
-  details: string; // Additional details for the modal
-};
+  description: string;
+}
 
-// Define an array of hot sale items
-const saleItems: SaleItem[] = [
-  { id: 1, name: "LENOVO THINKPAD 495S", specs: "AMD RYZEN 5 PRO 8GB RAM 256GB SSD 2GB RADEON GRAPHICS | 500 SSD | 16 GB RAM", details: "2nd Gen AMD Ryzen Pro CPU, Radeon™ Vega Graphics, Lightweight and portable, Slim bezel display, All-day battery life, Top-notch security features, Optional WWAN connectivity" },
-  { id: 2, name: "LENOVO THINKPAD 495S", specs: "AMD RYZEN 5 PRO 8GB RAM 256GB SSD 2GB RADEON GRAPHICS | 500 SSD | 16 GB RAM", details: "2nd Gen AMD Ryzen Pro CPU, Radeon™ Vega Graphics, Lightweight and portable, Slim bezel display, All-day battery life, Top-notch security features, Optional WWAN connectivity" },
+const hotSalesItems: Item[] = [
+  { id: 1, name: 'LENOVO THINKPAD 495S', description: 'AMD RYZEN 5 PRO 8GB RAM 256GB SSD 2GB RADEON GRAPHICS | 500 SSD | 16 GB RAM' },
+  { id: 2, name: 'LENOVO THINKPAD 495S', description: 'AMD RYZEN 5 PRO 8GB RAM 256GB SSD 2GB RADEON GRAPHICS | 500 SSD | 16 GB RAM' },
   // Add more items as needed
 ];
 
-// HotSales component definition
 const HotSale: React.FC = () => {
-  // State to track selected item and modal open/close status
-  const [selectedItem, setSelectedItem] = useState<SaleItem | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+  const [showModal, setShowModal] = useState(false);
 
-  // Function to handle clicks on each sale item
-  const handleClick = (item: SaleItem) => {
+  const handleClick = (item: Item) => {
     setSelectedItem(item);
-    setIsModalOpen(true);
+    setShowModal(true);
   };
 
-  // Function to close the modal
   const handleClose = () => {
-    setIsModalOpen(false);
+    setShowModal(false);
     setSelectedItem(null);
   };
 
   return (
-    <Box className="container my-4 text-center">
-      <Typography variant="h4" component="h2" color="primary" className="mb-4" style={{ color: "orange" }}>
-        HOT SALE
-      </Typography>
-      
-      <List>
-        {saleItems.map((item) => (
-          <ListItem key={item.id} disablePadding>
-            <ListItemButton onClick={() => handleClick(item)} className="rounded shadow-sm mb-2" style={{ backgroundColor: "#f0f4f8" }}>
-              <Typography variant="body1" style={{ fontWeight: "bold", color: "#333" }}>
-                {item.name} {item.specs}
-              </Typography>
-            </ListItemButton>
-          </ListItem>
+    <Container>
+      <h2 className="text-center text-danger my-4">Hot Sale</h2>
+      <Row className="justify-content-center">
+        {hotSalesItems.map(item => (
+          <Col key={item.id} xs={10} md={8} lg={6} className="my-2">
+            <div
+              className="p-3 border rounded bg-light text-center clickable"
+              onClick={() => handleClick(item)}
+              style={{ cursor: 'pointer' }}
+            >
+              {item.name} - {item.description}
+            </div>
+          </Col>
         ))}
-      </List>
+      </Row>
 
-      {/* Modal for showing item details */}
-      <Dialog open={isModalOpen} onClose={handleClose} maxWidth="sm" fullWidth>
-        <DialogTitle style={{ fontWeight: "bold", color: "#333" }}>
-          {selectedItem?.name}
-        </DialogTitle>
-        <DialogContent>
-          <Typography variant="subtitle1" color="textSecondary">
-            Portable business partner
-          </Typography>
-          <Typography variant="h5" style={{ fontWeight: "bold", marginTop: "0.5rem" }}>
-            {selectedItem?.name} (14") Laptop
-          </Typography>
-          <Typography variant="subtitle1" style={{ color: "#555" }}>
-            New Options Available
-          </Typography>
-          <Box mt={2}>
-            <Typography variant="body1" color="textSecondary">
-              {selectedItem?.details}
-            </Typography>
-          </Box>
-        </DialogContent>
-        <DialogActions>
-          <Button variant="contained" color="primary" onClick={() => alert(`Ordering: ${selectedItem?.name}`)}>
-            Order
-          </Button>
-          <Button onClick={handleClose} color="secondary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </Box>
+      {/* Modal for Item Details */}
+      <Modal show={showModal} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedItem?.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Row>
+            <Col md={6}>
+              {/* Placeholder for the image */}
+              <img
+                src="https://via.placeholder.com/250"
+                alt={selectedItem?.name}
+                className="img-fluid"
+              />
+            </Col>
+            <Col md={6}>
+              <h4>{selectedItem?.name}</h4>
+              <p className="text-muted">{selectedItem?.description}</p>
+              <ul>
+                <li>2nd Gen AMD Ryzen Pro CPU</li>
+                <li>Radeon Vega Graphics</li>
+                <li>Lightweight and portable</li>
+                <li>Slim bezel display</li>
+                <li>All-day battery life</li>
+                <li>Top-notch security features</li>
+                <li>Optional WWAN connectivity</li>
+              </ul>
+              <Button variant="primary" className="mt-3" block>
+                Order Now
+              </Button>
+            </Col>
+          </Row>
+        </Modal.Body>
+      </Modal>
+    </Container>
   );
 };
 
