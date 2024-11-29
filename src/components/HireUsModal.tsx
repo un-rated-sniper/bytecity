@@ -140,7 +140,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
             <Form.Label>Join Our WhatsApp Group</Form.Label>
             <a
               href={`https://www.whatsapp.com/send?text=${encodeURIComponent(
-                'Join our WhatsApp Group'
+                'Contact Us Through WhatsApp'
               )}`}
               target="_blank"
               rel="noopener noreferrer"
