@@ -24,8 +24,8 @@ const NavbarComponent:React.FC<HeroProps> = ({ onHireUsClick }) => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#aboutus">About Us</Nav.Link>
             <Nav.Link href="#services">Our Services</Nav.Link>
-            <Nav.Link href="#blog">Products Review</Nav.Link>
-            <Nav.Link href="#sales">Computer On Sale</Nav.Link>
+            <Nav.Link href="#blog">Blog</Nav.Link>
+            <Nav.Link href="#sales">Computer Store</Nav.Link>
             <Nav.Link href="#contact">Contact Us</Nav.Link>
              <button onClick={onHireUsClick} className="btn btn-warning">Hire Us</button>
           </Nav>
