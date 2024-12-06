@@ -9,7 +9,7 @@ const Message: React.FC = () => {
           <h2>
             Work Smarter with Innovative IT Business Solutions <span className="primary"> AND IDEAS</span>
           </h2>
-          <Button variant=" bg-warning" className="mt-3">
+          <Button variant=" bg-warning" className="mt-3" style={{ fontWeight: 'bold' }}>
           ➞ WORK WITH US
         </Button>
         </div>

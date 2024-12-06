@@ -10,7 +10,9 @@ const Hero: React.FC<HeroProps> = ({ onHireUsClick }) => {
       <Container>
         <h1>ByteCity Tech Solutions</h1>
         <p>Your One-Stop IT Solutions Partner</p>
-        <Button onClick={onHireUsClick} className="btn btn-warning">Hire Us</Button>
+        <Button variant="warning" className="mt-4" aria-label="Learn more about ByteCity Tech Solutions" style={{ fontWeight: 'bold' }} onClick={onHireUsClick}>
+          LEARN MORE
+        </Button>
       </Container>
     </section>
   );

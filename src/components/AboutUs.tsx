@@ -9,16 +9,16 @@ const AboutUs = () => {
 
   return (
     <section className="my-5">
-      <Container>
-        <Row className="justify-content-center">
+      <Container style={{ height: '50vh', paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <Row className="justify-content-center "> {/* Add g-4 for gutter spacing */}
           {plans.map((plan, index) => (
             <Col lg={4} md={6} sm={12} className="mb-4" key={index}>
-              <Card className="h-100 card-hover text-center">
+              <Card className="h-100 card-hover text-center" style={{ padding: '1.5rem', borderRadius: '10px' }}> {/* Added padding and borderRadius */}
                 <Card.Body>
-                  <Card.Title className="plan-title">{plan.title}</Card.Title>
-                  <ul className="list-unstyled features-list">
+                  <Card.Title className="plan-title" style={{ marginBottom: '1rem' }}>{plan.title}</Card.Title>
+                  <ul className="list-unstyled features-list" style={{ padding: '0', margin: '0', listStyleType: 'none' }}>
                     {plan.features.map((feature, i) => (
-                      <li key={i}>{feature}</li>
+                      <li key={i} style={{ marginBottom: '0.5rem' }}>{feature}</li>
                     ))}
                   </ul>
                 </Card.Body>

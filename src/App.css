@@ -23,6 +23,18 @@ body {
   margin-right: 15px;
 }
 
+/* Hover effect for navbar links */
+.nav-hover {
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-hover:hover {
+  color: #f8d210; /* Gold color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+}
+
 /* Hero Section */
 .hero {
   height: 70vh;
@@ -46,7 +58,7 @@ body {
   margin-left: 10px;
 }
 
-/* About Us */
+/* About Us Section */
 .card-hover {
   background-color: #f8f9fa;
   border: 1px solid #ddd;
@@ -94,6 +106,7 @@ footer a {
 footer a:hover {
   color: orange;
 }
+
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -104,11 +117,12 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
+/* Typography */
 h5 {
   font-weight: 600;
   color: #343a40; /* Dark color for text */
 }
 
 .text-primary {
-  color: #007bff; /* Color for the title */
+  color: #007bff; /* Primary color for titles */
 }

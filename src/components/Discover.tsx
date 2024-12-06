@@ -17,7 +17,7 @@ const Discover = () => {
           <li>Engaging, user-friendly websites</li>
           <li>Tailored social media strategies</li>
         </ul>
-        <Button variant="warning" className="mt-4" aria-label="Learn more about ByteCity Tech Solutions">
+        <Button variant="warning" className="mt-4" aria-label="Learn more about ByteCity Tech Solutions" style={{ fontWeight: 'bold' }}>
           LEARN MORE
         </Button>
       </Container>
