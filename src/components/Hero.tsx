@@ -4,14 +4,14 @@ interface HeroProps {
   onHireUsClick: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onHireUsClick }) => {
+const Hero: React.FC<HeroProps> = ({ }) => {
   return (
     <section className="hero bg-dark text-white d-flex align-items-center" style={{ backgroundImage: 'url(/hero-image-03.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <Container>
         <h1>ByteCity Tech Solutions</h1>
         <p>Your One-Stop IT Solutions Partner</p>
-        <Button variant="warning" className="mt-4" aria-label="Learn more about ByteCity Tech Solutions" style={{ fontWeight: 'bold' }} onClick={onHireUsClick}>
-          LEARN MORE
+        <Button variant=" bg-warning" className="mt-3" style={{ fontWeight: 'bold' }}>
+          ➞ WORK WITH US
         </Button>
       </Container>
     </section>
