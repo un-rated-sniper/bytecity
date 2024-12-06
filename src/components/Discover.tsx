@@ -4,7 +4,7 @@ const Discover = () => {
   const images = [
     { src: 'image1.png', alt: 'Design 1' }, // Replace with your image paths
     { src: 'image2.png', alt: 'Design 2' },
-    { src: 'image3.ppg', alt: 'Design 3' },
+    { src: 'image2.ppg', alt: 'Design 3' },
   ];
 
   return (
