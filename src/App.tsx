@@ -9,7 +9,7 @@ import Message from './components/Message';
 import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
 import HireUsModal from './components/HireUsModal';
-import HotSale from './components/HotSale';
+
 // import CurrentOffers from './components/CurrentOffers';
 
 const App: React.FC = () => {
@@ -24,13 +24,13 @@ const App: React.FC = () => {
       <NavbarComponent onHireUsClick={handleShowModal}/>
       <Hero onHireUsClick={handleShowModal}/>
       <Discover />
-      <AboutUs />
-      <Message />
       <Services />
+      <Message />
+      <AboutUs/>
       <Testimonials />
       <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
       <WhyChooseUs />
-      <HotSale/>
+      
       <Footer />
     </div>
   );

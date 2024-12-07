@@ -137,7 +137,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
           </Form.Group>
 
           <Form.Group controlId="formWhatsappLink" className="mt-3">
-            <Form.Label>Join Our WhatsApp Group</Form.Label>
+            <Form.Label> Contact Us Through WhatsApp </Form.Label>
             <a
               href={`https://www.whatsapp.com/send?text=${encodeURIComponent(
                 'Contact Us Through WhatsApp'
@@ -146,7 +146,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
               rel="noopener noreferrer"
               className="btn btn-outline-info d-block mb-2"
             >
-              Join WhatsApp Group
+              Contact Us Through WhatsApp
             </a>
           </Form.Group>
         </Form>

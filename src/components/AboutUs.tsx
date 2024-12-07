@@ -1,28 +1,40 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-const AboutUs = () => {
-  const plans = [
-    { title: 'Web Design', features: ['Web Design', 'Graphic Design', 'Technical Support'] },
-    { title: 'Design & Branding', features: ['Business Branding', '3D and 2D Signage', 'Printing Services'] },
-    { title: 'Media Management', features: ['Social Media Management', 'Web Content Management', 'Virtual Assistance'] },
+// Using Bootstrap Icons for better integration
+const AboutUs: React.FC = () => {
+  const services = [
+    { 
+      title: 'Fast Turnaround', 
+      text: 'We deliver projects quickly without compromising on quality.',
+      icon: 'bi bi-clock' // Fast Turnaround Icon
+    },
+    { 
+      title: 'Secure and Trusted Services', 
+      text: 'Your data and information are safe with us.',
+      icon: 'bi bi-shield-lock' // Secure and Trusted Icon
+    },
+    { 
+      title: 'Fast Delivery', 
+      text: 'We ensure that all our services are delivered on time.',
+      icon: 'bi bi-truck' // Fast Delivery Icon
+    },
   ];
 
   return (
-    <section className="my-5">
-      <Container style={{ height: '50vh', paddingTop: '2rem', paddingBottom: '2rem' }}>
-        <Row className="justify-content-center "> {/* Add g-4 for gutter spacing */}
-          {plans.map((plan, index) => (
-            <Col lg={4} md={6} sm={12} className="mb-4" key={index}>
-              <Card className="h-100 card-hover text-center" style={{ padding: '1.5rem', borderRadius: '10px' }}> {/* Added padding and borderRadius */}
-                <Card.Body>
-                  <Card.Title className="plan-title" style={{ marginBottom: '1rem' }}>{plan.title}</Card.Title>
-                  <ul className="list-unstyled features-list" style={{ padding: '0', margin: '0', listStyleType: 'none' }}>
-                    {plan.features.map((feature, i) => (
-                      <li key={i} style={{ marginBottom: '0.5rem' }}>{feature}</li>
-                    ))}
-                  </ul>
-                </Card.Body>
-              </Card>
+    <section className="py-5 bg-light text-center">
+      <Container>
+        <h2 className="text-warning mb-3">WHY CHOOSE US?</h2>
+        <hr style={{ width: '60px', margin: '0 auto', borderTop: '2px solid orange' }} />
+
+        <Row className="mt-4">
+          {services.map((service, index) => (
+            <Col xs={12} sm={6} md={4} key={index} className="my-3">
+              <div className="icon-container">
+                <i className={`${service.icon} fa-3x text-info`} />
+                <h5 className="mt-3 text-secondary">{service.title}</h5>
+                <p className="text-muted">{service.text}</p>
+              </div>
             </Col>
           ))}
         </Row>
@@ -32,4 +44,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-

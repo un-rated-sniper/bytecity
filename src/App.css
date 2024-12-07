@@ -126,3 +126,123 @@ h5 {
 .text-primary {
   color: #007bff; /* Primary color for titles */
 }
+ /* Services Section Styling */
+#services {
+  padding: 3rem 0;
+}
+
+#services .row {
+  margin: 0;
+}
+
+#services .col {
+  display: flex;
+  align-items: stretch; /* Ensures all cards stretch equally */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content is spaced out evenly */
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Prevents overflow from content */
+}
+
+.card-body {
+  padding: 1.5rem; /* Added more padding for readability */
+  flex-grow: 1; /* Makes sure card expands to fill available space */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #343a40;
+  flex-grow: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #services {
+    padding: 2rem 0;
+  }
+
+  .card-body {
+    padding: 1rem; /* Adjust padding on medium screens */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Smaller title font for medium devices */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Adjust text size for better readability */
+  }
+}
+
+@media (max-width: 576px) {
+  #services {
+    padding: 1.5rem 0; /* Reduced padding for small screens */
+  }
+
+  .card {
+    margin-bottom: 1.5rem; /* Add some space between cards */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Even smaller title for small screens */
+  }
+
+  .card-text {
+    font-size: 0.85rem; /* Adjust text size further for small screens */
+  }
+
+  .card-body {
+    padding: 0.8rem; /* Less padding on small screens */
+  }
+
+  .card:hover {
+    transform: none; /* Remove hover effect on small screens */
+    box-shadow: none; /* Remove shadow on small screens */
+  }
+}
+#services .icon-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#services .icon-container i {
+  color: #007bff; /* Set the icon color */
+}
+
+#services .icon-container h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+#services .icon-container p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #6c757d;
+}
+
+#services .icon-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
