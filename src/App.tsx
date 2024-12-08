@@ -6,7 +6,7 @@ import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import Discover from './components/Discover';
 import Message from './components/Message';
-import Testimonials from './components/Testimonials';
+import Testimonials from './components/Testimonials'; // Ensure the file exists and is correctly named
 import WhyChooseUs from './components/WhyChooseUs';
 import HireUsModal from './components/HireUsModal';
 
@@ -27,10 +27,9 @@ const App: React.FC = () => {
       <Services />
       <Message />
       <AboutUs/>
-      <Testimonials />
+      <Testimonials/>
       <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
       <WhyChooseUs />
-      
       <Footer />
     </div>
   );

@@ -23,7 +23,7 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-5 bg-light text-center">
       <Container>
-        <h2 className="text-warning mb-3">WHAT WE DO BEST</h2>
+        <h2 className="text-warning mb-3">What We Do</h2>
         <hr style={{ width: '60px', margin: '0 auto', borderTop: '2px solid orange' }} />
 
         <Row className="mt-4 justify-content-center"> {/* Center the cards */}

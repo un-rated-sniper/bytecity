@@ -1,40 +1,48 @@
 import React from 'react';
-import { Container, Col, Card, Row } from 'react-bootstrap'; // Import Row for layout
+import { Container, Col, Card, Row } from 'react-bootstrap';
 
 const Testimonials: React.FC = () => {
   const services = [
     { 
       title: 'Web Development', 
-      text: 'Web Application Design and Development', 
-      image: '/image.jpg' // Replace with actual image paths
+      text: 'Learn to create stunning, responsive websites and powerful web applications.', 
+      image: '/image.jpg' // Replace with the actual image path for web development
     },
     { 
-      title: 'Graphic & Design', 
-      text: 'Design of all kinds and business branding', 
-      image: '/image.jpg'
+      title: 'Python Programming & Data Analysis', 
+      text: 'Master Python for automation, data visualization, and insights-driven analysis.', 
+      image: '/image.jpg' // Replace with the actual image path for Python and data analysis
     },
     { 
-      title: 'Social Media Management', 
-      text: 'Management of social media accounts, Social Media Marketing, and Websites.', 
-      image: '/image.jpg'
+      title: 'Graphics Design', 
+      text: 'Design eye-catching visuals, logos, and branding materials for businesses.', 
+      image: '/image.jpg' // Replace with the actual image path for graphic design
     },
   ];
 
   return (
-    <section id="services" className="py-5">
+    <section id="services" className="py-5 bg-light">
       <Container>
-       
-      <h2 className="text-warning mb-3">WHAT WE DO BEST</h2>
-      <hr style={{ width: '60px', margin: '0 auto', borderTop: '3px solid orange' }} />
-
-        <Row className="justify-content-center"> {/* Use Row for proper grid layout */}
+        <h2 className="text-warning text-center mb-3">Let's Teach You</h2>
+        <hr
+          style={{
+            width: '60px',
+            margin: '0 auto',
+            borderTop: '3px solid orange',
+          }}
+        />
+        <Row className="justify-content-center mt-4">
           {services.map((service, index) => (
-            <Col xs={12} sm={6} md={4} key={index} className="mb-4"> {/* Adjust for different screen sizes */}
-              <Card className="h-100 text-white">
-                <Card.Img src={service.image} alt={service.title} className="card-img" />
+            <Col xs={12} sm={6} md={4} key={index} className="mb-4">
+              <Card className="h-100 shadow-sm">
+                <Card.Img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="card-img" 
+                />
                 <Card.ImgOverlay className="d-flex flex-column justify-content-end bg-dark bg-opacity-50">
                   <Card.Title className="text-white">{service.title}</Card.Title>
-                  <Card.Text>{service.text}</Card.Text>
+                  <Card.Text className="text-light">{service.text}</Card.Text>
                 </Card.ImgOverlay>
               </Card>
             </Col>
@@ -45,4 +53,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default Testimonials;

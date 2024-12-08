@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
   return (
     <section className="py-5 bg-light text-center">
       <Container>
-        <h2 className="text-warning mb-3">WHY CHOOSE US ?</h2>
+        <h2 className="text-warning mb-3">Why US ?</h2>
         <hr style={{ width: '60px', margin: '0 auto', borderTop: '2px solid orange' }} />
 
         <Row className="mt-4">
