@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Col, Card, Row } from 'react-bootstrap';
 
-const Testimonials: React.FC = () => {
+const LetsTeachYou: React.FC = () => {
   const services = [
     { 
       title: 'Web Development', 
@@ -53,4 +53,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default LetsTeachYou;

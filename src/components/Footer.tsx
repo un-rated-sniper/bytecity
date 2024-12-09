@@ -27,11 +27,10 @@ const Footer = () => {
 
           {/* Contact and Social Media */}
           <Col md={4} sm={6} className="mb-4">
-            <h5 className="text-warning">CONTACT US</h5>
+            <h5 className="text-warning">Contact Us</h5>
             <p className="text-light">Email: bytecitytech.ke@gmail.com</p>
-            <p className="text-light">Phone: +254777439049</p>
+            <p className="text-light">Phone: +254 777 439 049</p>
 
-            <h5 className="text-warning mt-3">Follow Us</h5>
             <div>
               <a href="#" className="text-light me-3"><i className="fab fa-facebook fa-2x"></i></a>
               <a href="#" className="text-light me-3"><i className="fab fa-twitter fa-2x"></i></a>

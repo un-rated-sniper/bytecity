@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 // Using Bootstrap Icons for better integration
-const AboutUs: React.FC = () => {
+const WhyUs: React.FC = () => {
   const services = [
     { 
       title: 'Fast Turnaround', 
@@ -43,4 +43,4 @@ const AboutUs: React.FC = () => {
   );
 };
 
-export default AboutUs;
+export default WhyUs;
