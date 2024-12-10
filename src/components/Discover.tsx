@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Button, Row, Col, Carousel } from 'react-bootstrap';
 
 const Discover = () => {
@@ -8,19 +9,33 @@ const Discover = () => {
   ];
 
   return (
-    <section className="discover-section py-5 bg-light" id="discover">
+    <section
+      className="discover-section bg-light d-flex align-items-center"
+      id="discover"
+      style={{
+        height: '70vh', // Matches the height of TrainingHero
+        backgroundImage: 'url("discover-bg.png")', // Optional background image
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <Container>
         <Row className="align-items-center h-100">
           {/* Text Section */}
           <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
-            <h2 className="text-dark mb-3">Looking for the perfect design?</h2>
-            <p className="text-muted fs-5">
-              Sit back and relax while we handle everything.
-              We'll share a sample for your approval before proceeding with the final print and delivery.
+            <h2 className="display-6 fw-bold text-warning">
+              Looking for the Perfect Design?
+            </h2>
+            <p className="fs-5 mt-3 text-muted">
+              Sit back and relax while we handle everything. From ideation to
+              delivery, we'll share a sample for your approval before
+              finalizing your world-class design.
             </p>
             <Button
               variant="warning"
-              className="mt-3"
+              size="lg"
+              className="mt-4"
               style={{ fontWeight: 'bold', padding: '10px 20px' }}
             >
               HIRE US
@@ -37,7 +52,7 @@ const Discover = () => {
                     alt={image.alt}
                     className="d-block w-100 rounded"
                     style={{
-                      maxHeight: '400px', // Ensures a taller height
+                      maxHeight: '400px',
                       objectFit: 'cover',
                       borderRadius: '10px',
                     }}
@@ -53,5 +68,3 @@ const Discover = () => {
 };
 
 export default Discover;
-
-

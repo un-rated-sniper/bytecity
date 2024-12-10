@@ -7,6 +7,7 @@ import WhyUs from "../components/WhyUs";
 import LetsTeachYou from "../components/LetsTeachYou";
 import WorkWithUsModal from "../components/WorkWithUsModal";
 import WhyChooseUs from "../components/WhyChooseUs";
+import TrainingHero from "../components/TrainingHero";
 
 const Home: React.FC = () => {
     const [showHireUsModal, setShowHireUsModal] = useState(false);
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
             <Services />
             <Message />
             <WhyUs />
+            <TrainingHero />
             <LetsTeachYou />
             <WorkWithUsModal show={showHireUsModal} handleClose={handleCloseModal} />
             <WhyChooseUs />

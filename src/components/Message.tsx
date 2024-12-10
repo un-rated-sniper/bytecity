@@ -3,16 +3,32 @@ import { Container, Button } from 'react-bootstrap';
 
 const Message: React.FC = () => {
   return (
-    <section className="py-5 text-center bg-warning" dir="rtl">
+    <section
+      className="py-5 d-flex justify-content-center align-items-center text-center bg-warning"
+      style={{
+        height: '60vh', // Maintain the compact impactful height
+        backgroundImage: 'url("message-bg.png")', // Optional background image
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        color: '#1a1a1a',
+      }}
+    >
       <Container>
-        <div className="p-3 mb-2 bg-warning text-dark">
-          <h2>
-            Work Smarter with Innovative IT Business Solutions <span className="primary"> AND IDEAS</span>
-          </h2>
-          <Button variant=" bg-warning" className="mt-3" style={{ fontWeight: 'bold' }}>
+        <h2 className="fw-bold text-dark mb-3">
+          Work Smarter with Innovative IT Business Solutions
+        </h2>
+        <p className="fs-5 text-muted">
+          Transform your business with cutting-edge technology, creative strategies, and tailored solutions to meet your needs.
+        </p>
+        <Button
+          variant="dark"
+          size="lg"
+          className="mt-3 fw-bold px-4"
+          style={{ backgroundColor: '#000', borderColor: '#000' }}
+        >
           ➞ WORK WITH US
         </Button>
-        </div>
       </Container>
     </section>
   );
