@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
 
-interface HireUsModalProps {
+interface WorkWithUsModalProps {
   show: boolean;
   handleClose: () => void;
 }
 
-const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
+const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -164,4 +164,4 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
   );
 };
 
-export default HireUsModal;
+export default WorkWithUsModal;

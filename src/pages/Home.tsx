@@ -5,7 +5,7 @@ import Services from "../components/Services";
 import Message from "../components/Message";
 import WhyUs from "../components/WhyUs";
 import LetsTeachYou from "../components/LetsTeachYou";
-import HireUsModal from "../components/HireUsModal";
+import WorkWithUsModal from "../components/WorkWithUsModal";
 import WhyChooseUs from "../components/WhyChooseUs";
 
 const Home: React.FC = () => {
@@ -15,14 +15,14 @@ const Home: React.FC = () => {
     const handleCloseModal = () => setShowHireUsModal(false);
 
     return (
-        <div >
+        <div>
             <Hero onHireUsClick={handleShowModal} />
             <Discover />
             <Services />
             <Message />
             <WhyUs />
             <LetsTeachYou />
-            <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
+            <WorkWithUsModal show={showHireUsModal} handleClose={handleCloseModal} />
             <WhyChooseUs />
         </div>
     );
