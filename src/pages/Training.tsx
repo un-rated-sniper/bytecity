@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import TrainingHero from '../components/TrainingHero';
 const Training = () => {

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Container, Button, Row, Col, Carousel } from 'react-bootstrap';
 
 const Discover = () => {
