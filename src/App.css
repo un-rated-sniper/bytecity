@@ -247,3 +247,35 @@ h5 {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Accordion.css */
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-title {
+  padding: 15px;
+  background: #f7f7f7;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.accordion-title:hover {
+  background: #e7e7e7;
+}
+
+.accordion-content {
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}

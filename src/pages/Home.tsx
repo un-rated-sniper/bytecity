@@ -4,10 +4,11 @@ import Discover from "../components/Discover";
 import Services from "../components/Services";
 import Message from "../components/Message";
 import WhyUs from "../components/WhyUs";
-import LetsTeachYou from "../components/LetsTeachYou";
 import WorkWithUsModal from "../components/WorkWithUsModal";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TrainingHero from "../components/TrainingHero";
+import CustomAccordion from "../components/CustomAccordion";
+
 
 const Home: React.FC = () => {
     const [showHireUsModal, setShowHireUsModal] = useState(false);
@@ -19,11 +20,11 @@ const Home: React.FC = () => {
         <div>
             <Hero onHireUsClick={handleShowModal} />
             <Discover />
+            <CustomAccordion/>
             <Services />
             <Message />
             <WhyUs />
             <TrainingHero />
-            <LetsTeachYou />
             <WorkWithUsModal show={showHireUsModal} handleClose={handleCloseModal} />
             <WhyChooseUs />
         </div>
