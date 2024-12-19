@@ -11,7 +11,7 @@ const Services: React.FC = () => {
     { 
       title: 'Graphic & Design', 
       text: 'Design of all kinds and business branding', 
-      image: '/image.jpg'
+      image: '/graphic-design-one.png'
     },
     { 
       title: 'Social Media Management', 
