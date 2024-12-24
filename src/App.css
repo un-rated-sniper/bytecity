@@ -1,7 +1,22 @@
+/* Add your CSS styles here */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f7a800;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --hover-color: #e68a00;
+  --font-family: Arial, Helvetica, sans-serif;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 40px;
+}
+
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
-  color: #343a40;
+  font-family: var(--font-family);
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
 }
 
 .centered-app-content {
@@ -11,7 +26,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #000;
+  background-color: var(--dark-color);
 }
 
 .navbar-brand,
@@ -19,20 +34,15 @@ body {
   color: #fff !important;
 }
 
-.navbar-brand img {
-  margin-right: 15px;
-}
-
-/* Hover effect for navbar links */
 .nav-hover {
   color: #fff;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-hover:hover {
-  color: #f8d210; /* Gold color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+  color: var(--secondary-color);
+  transform: scale(1.1);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
 /* Hero Section */
@@ -42,11 +52,13 @@ body {
   display: flex;
   align-items: center;
   text-align: left;
+  padding: var(--spacing-large);
 }
 
 .hero h1 {
   font-size: 2.5rem;
   color: #fff;
+  margin-bottom: var(--spacing-medium);
 }
 
 .hero p {
@@ -54,228 +66,80 @@ body {
   color: #fff;
 }
 
-.hero .btn {
-  margin-left: 10px;
+/* Services Section */
+#services {
+  padding: var(--spacing-large) 0;
 }
 
-/* About Us Section */
-.card-hover {
-  background-color: #f8f9fa;
+#services .card {
+  background-color: var(--light-color);
   border: 1px solid #ddd;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.plan-title {
+#services .card-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: orange;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-small);
 }
 
-/* Discover Section */
-#discover h2 {
-  color: orange;
-}
-
-#discover .btn {
-  background-color: orange;
-  color: #fff;
-}
-
-#discover .btn:hover {
-  background-color: #e68a00;
+#services .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
 footer {
-  background-color: #000;
+  background-color: var(--dark-color);
   color: #fff;
-  padding: 2em 0;
+  padding: var(--spacing-large) 0;
+  text-align: center;
 }
 
-footer h5,
 footer a {
   color: #fff;
+  text-decoration: none;
 }
 
 footer a:hover {
-  color: orange;
-}
-
-.icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icon-container i {
-  margin-bottom: 10px;
+  color: var(--secondary-color);
 }
 
 /* Typography */
-h5 {
-  font-weight: 600;
-  color: #343a40; /* Dark color for text */
-}
-
-.text-primary {
-  color: #007bff; /* Primary color for titles */
-}
- /* Services Section Styling */
-#services {
-  padding: 3rem 0;
-}
-
-#services .row {
-  margin: 0;
-}
-
-#services .col {
-  display: flex;
-  align-items: stretch; /* Ensures all cards stretch equally */
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensures content is spaced out evenly */
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Prevents overflow from content */
-}
-
-.card-body {
-  padding: 1.5rem; /* Added more padding for readability */
-  flex-grow: 1; /* Makes sure card expands to fill available space */
-}
-
-.card-title {
-  font-size: 1.5rem;
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  color: orange;
-  margin-bottom: 1rem;
+  color: var(--dark-color);
 }
 
-.card-text {
+p {
   font-size: 1rem;
-  color: #343a40;
-  flex-grow: 1;
+  line-height: 1.6;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  #services {
-    padding: 2rem 0;
+  .hero h1 {
+      font-size: 2rem;
   }
 
-  .card-body {
-    padding: 1rem; /* Adjust padding on medium screens */
+  .hero p {
+      font-size: 1rem;
   }
 
-  .card-title {
-    font-size: 1.2rem; /* Smaller title font for medium devices */
-  }
-
-  .card-text {
-    font-size: 0.9rem; /* Adjust text size for better readability */
+  #services .card-title {
+      font-size: 1.2rem;
   }
 }
 
 @media (max-width: 576px) {
+  .hero {
+      height: auto;
+      padding: var(--spacing-medium);
+  }
+
   #services {
-    padding: 1.5rem 0; /* Reduced padding for small screens */
+      padding: var(--spacing-medium) 0;
   }
-
-  .card {
-    margin-bottom: 1.5rem; /* Add some space between cards */
-  }
-
-  .card-title {
-    font-size: 1rem; /* Even smaller title for small screens */
-  }
-
-  .card-text {
-    font-size: 0.85rem; /* Adjust text size further for small screens */
-  }
-
-  .card-body {
-    padding: 0.8rem; /* Less padding on small screens */
-  }
-
-  .card:hover {
-    transform: none; /* Remove hover effect on small screens */
-    box-shadow: none; /* Remove shadow on small screens */
-  }
-}
-#services .icon-container {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-#services .icon-container i {
-  color: #007bff; /* Set the icon color */
-}
-
-#services .icon-container h5 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-#services .icon-container p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  color: #6c757d;
-}
-
-#services .icon-container:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Accordion.css */
-.accordion {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-}
-
-.accordion-item {
-  border: 1px solid #ddd;
-  margin: 5px 0;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.accordion-title {
-  padding: 15px;
-  background: #f7f7f7;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.accordion-title:hover {
-  background: #e7e7e7;
-}
-
-.accordion-content {
-  padding: 15px;
-  background: #fff;
-  border-top: 1px solid #ddd;
 }
