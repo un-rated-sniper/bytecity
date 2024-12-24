@@ -7,15 +7,15 @@ const Services: React.FC = () => {
             title: 'Web Development',
             steps: [
                 {
-                    title: 'Step 1: Website Design and Development',
+                    title: ' Website Design and Development',
                     content: 'Create a visually appealing and user-friendly website. Optimize website for search engines (SEO). Ensure website is mobile-responsive. Develop custom web applications.'
                 },
                 {
-                    title: 'Step 2: E-commerce Integration',
+                    title: 'E-commerce Integration',
                     content: 'Set up online store to sell products or services. Process payments securely. Manage inventory and shipping. Implement marketing strategies to drive sales.'
                 },
                 {
-                    title: 'Step 3: Website Maintenance and Updates',
+                    title: 'Website Maintenance and Updates',
                     content: 'Regularly update content and plugins. Monitor website performance and security. Back up website data. Provide technical support.'
                 }
             ]
@@ -24,15 +24,15 @@ const Services: React.FC = () => {
             title: 'Graphic & Design',
             steps: [
                 {
-                    title: 'Step 1: Branding and Logo Design',
+                    title: 'Branding and Logo Design',
                     content: 'Create a strong brand identity. Design a unique logo. Develop a consistent brand style guide.'
                 },
                 {
-                    title: 'Step 2: Print Design',
+                    title: 'Print Design',
                     content: 'Design business cards, brochures, and flyers. Create marketing materials for print campaigns. Design packaging and labels.'
                 },
                 {
-                    title: 'Step 3: Digital Design',
+                    title: 'Digital Design',
                     content: 'Design social media graphics and banners. Create email templates. Design digital advertisements.'
                 }
             ]
@@ -41,15 +41,15 @@ const Services: React.FC = () => {
             title: 'Social Media Management',
             steps: [
                 {
-                    title: 'Step 1: Social Media Strategy',
+                    title: 'Social Media Strategy',
                     content: 'Identify target audience. Set clear goals and objectives. Choose the right social media platforms. Develop a content calendar.'
                 },
                 {
-                    title: 'Step 2: Content Creation',
+                    title: 'Content Creation',
                     content: 'Create engaging content, such as blog posts, videos, and images. Write compelling captions and descriptions. Use relevant hashtags.'
                 },
                 {
-                    title: 'Step 3: Community Management',
+                    title: 'Community Management',
                     content: 'Respond to comments and messages promptly. Engage with followers and build relationships. Monitor social media analytics.'
                 }
             ]
