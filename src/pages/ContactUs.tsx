@@ -35,15 +35,15 @@ const ContactUs: React.FC = () => {
         <div className="row">
           {/* Contact Form Section */}
           <div className="col-lg-6 mb-4">
-          <h5 className="text-warning">Contct Us </h5>
+            <h5 className="text-warning mb-4 display-6">Contact Us</h5>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">
+                <label htmlFor="name" className="form-label fs-5">
                   Your Name
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control p-3 fs-5"
                   id="name"
                   value={formData.name}
                   onChange={handleChange}
@@ -52,12 +52,12 @@ const ContactUs: React.FC = () => {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="email" className="form-label">
+                <label htmlFor="email" className="form-label fs-5">
                   Your Email
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control p-3 fs-5"
                   id="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -66,11 +66,11 @@ const ContactUs: React.FC = () => {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="message" className="form-label">
+                <label htmlFor="message" className="form-label fs-5">
                   Your Message
                 </label>
                 <textarea
-                  className="form-control"
+                  className="form-control p-3 fs-5"
                   id="message"
                   rows={5}
                   value={formData.message}
@@ -79,7 +79,7 @@ const ContactUs: React.FC = () => {
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary w-100">
+              <button type="submit" className="btn btn-warning w-100 py-3 fs-5">
                 Send Message
               </button>
             </form>
@@ -87,31 +87,34 @@ const ContactUs: React.FC = () => {
 
           {/* Contact Details Section */}
           <div className="col-lg-6 mb-4">
-          <h5 className="text-warning">Get In Touch</h5>
-            
-            <p>
+            <h5 className="text-warning mb-4 display-6">Get In Touch</h5>
+            <p className="fs-5">
               <strong>Address:</strong> 123 ByteCity Tech Lane, City, Country
             </p>
-            <p>
+            <p className="fs-5">
               <strong>Phone:</strong> +254 777 439 049
             </p>
-            <p>
+            <p className="fs-5">
               <strong>Email:</strong> info@bytecitytech.com
             </p>
 
-            {/* Optional: Social Media Links */}
-            <div className="d-flex">
-              <a href="#" className="text-dark me-3">
-                <i className="bi bi-facebook"></i> Facebook
+            {/* Social Media Links */}
+            <div className="d-flex justify-content-start">
+              <a href="#" className="text-dark me-3 fs-5">
+                <i className="bi bi-facebook" style={{ fontSize: '1.5rem' }}></i>
+                <span className="ms-2">Facebook</span>
               </a>
-              <a href="#" className="text-dark me-3">
-                <i className="bi bi-twitter"></i> Twitter
+              <a href="#" className="text-dark me-3 fs-5">
+                <i className="bi bi-twitter" style={{ fontSize: '1.5rem' }}></i>
+                <span className="ms-2">Twitter</span>
               </a>
-              <a href="#" className="text-dark me-3">
-                <i className="bi bi-linkedin"></i> LinkedIn
+              <a href="#" className="text-dark me-3 fs-5">
+                <i className="bi bi-linkedin" style={{ fontSize: '1.5rem' }}></i>
+                <span className="ms-2">LinkedIn</span>
               </a>
-              <a href="#" className="text-dark">
-                <i className="bi bi-whatsapp"></i> WhatsApp
+              <a href="#" className="text-dark fs-5">
+                <i className="bi bi-whatsapp" style={{ fontSize: '1.5rem' }}></i>
+                <span className="ms-2">WhatsApp</span>
               </a>
             </div>
           </div>

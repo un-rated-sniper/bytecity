@@ -4,7 +4,7 @@ import Discover from "../components/Discover";
 import Services from "../components/Services";
 import Message from "../components/Message";
 import WhyUs from "../components/WhyUs";
-import WorkWithUsModal from "../components/WorkWithUsModal";
+import HireUsModal from "../components/HireUsModal";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TrainingHero from "../components/TrainingHero";
 import CustomAccordion from "../components/CustomAccordion";
@@ -18,14 +18,14 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            <Hero onHireUsClick={handleShowModal} />
-            <Discover />
+            <Hero />
+            <Discover onHireUsClick={handleShowModal} />
             <CustomAccordion/>
             <Services />
             <Message />
             <WhyUs />
             <TrainingHero />
-            <WorkWithUsModal show={showHireUsModal} handleClose={handleCloseModal} />
+            <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
             <WhyChooseUs />
         </div>
     );

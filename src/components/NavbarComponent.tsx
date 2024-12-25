@@ -24,7 +24,7 @@ const NavbarComponent: React.FC = () => {
             <Nav.Link as={Link} to="/about-us">
               About Us
             </Nav.Link>
-            <Nav.Link as={Link} to="/services">
+            <Nav.Link as={Link} to="/our-services">
               Our Services
             </Nav.Link>
             <Nav.Link as={Link} to="/training">

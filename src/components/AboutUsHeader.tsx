@@ -22,8 +22,12 @@ const AboutUsHeader: React.FC = () => {
         <p className="lead mb-4">
           We are ByteCity Tech Solutions, delivering innovative and tailor-made technology solutions for your business.
         </p>
-        <a href="#our-team" className="btn btn-light btn-lg">
-          Meet Our Team
+        <a
+          href="#"
+          className="btn btn-light btn-lg"
+          onClick={() => window.location.href = '/careers'}
+        >
+          Join Our Team
         </a>
       </div>
     </div>

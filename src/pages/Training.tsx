@@ -26,6 +26,14 @@ const trainingData = [
     buttonText: 'Join a Class',
     reverse: false,
   },
+  {
+    title: 'Intro to Photography and Videography',
+    description:
+      'Our Intro to Photography and Videography course will teach you the fundamental skills needed to capture stunning images and videos. Learn how to use a camera effectively, compose beautiful shots, and edit your photos and videos with the latest software. This course is ideal for beginners looking to get into photography and videography or enhance their existing skills.',
+    image: 'photography-videography.png',
+    buttonText: 'Join a Class',
+    reverse: true,
+  },
 ];
 
 const TrainingSection = ({
@@ -42,15 +50,9 @@ const TrainingSection = ({
   reverse: boolean;
 }) => (
   <Row
-    className={`align-items-center mb-5 ${
-      reverse ? 'flex-lg-row-reverse' : ''
-    }`}
+    className={`align-items-center mb-5 ${reverse ? 'flex-lg-row-reverse' : ''}`}
   >
-    <Col
-      lg={6}
-      className="text-center text-lg-start mb-4 mb-lg-0 px-3"
-      style={{ padding: '0 1.5rem' }}
-    >
+    <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0 px-3">
       <h3 className="text-warning fw-bold mb-3">{title}</h3>
       <p className="text-muted fs-5 mb-4">{description}</p>
       <Button
@@ -77,39 +79,16 @@ const TrainingSection = ({
 
 const Training = () => {
   return (
-    <section className="training-section py-5 bg-light" id="training">
+    <section
+      className="training-section py-5 bg-light my-5"
+      id="training"
+    >
       <TrainingHero />
       <Container className="py-4">
         {trainingData.map((item, index) => (
           <TrainingSection key={index} {...item} />
         ))}
       </Container>
-      <style jsx global>{`
-        .training-section {
-          padding: 2rem 0;
-        }
-
-        @media (max-width: 576px) {
-          .training-section h3 {
-            font-size: 1.5rem;
-          }
-          .training-section p {
-            font-size: 1rem;
-          }
-          .training-section img {
-            max-height: 250px !important;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .training-section h3 {
-            font-size: 1.75rem;
-          }
-          .training-section p {
-            font-size: 1.1rem;
-          }
-        }
-      `}</style>
     </section>
   );
 };

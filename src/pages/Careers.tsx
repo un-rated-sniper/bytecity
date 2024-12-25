@@ -20,22 +20,20 @@ const Careers: React.FC = () => {
     "Data Scientist",
   ];
 
+  const handleApplyNow = () => {
+    window.open("mailto:careers@bytecitytech.com", "_blank");
+  };
+
   return (
     <div className="careers-page">
-      {/* Hero section */}
-      <Hero
-        onHireUsClick={() =>
-          (window.location.href = "mailto:careers@bytecitytech.com")
-        }
-      />
+      {/* Hero Section */}
+      <Hero />
 
       <Container className="py-5">
         {/* Introduction Section */}
         <Row className="align-items-center text-center text-lg-start mb-5">
           <Col>
-            <h1 className="text-dark mb-4" style={{ fontWeight: "bold" }}>
-              Careers at ByteCity Tech
-            </h1>
+            <h1 className="text-warning mb-4 display-6">Careers at ByteCity Tech</h1>
             <p className="text-muted fs-5">{introText}</p>
           </Col>
         </Row>
@@ -43,9 +41,7 @@ const Careers: React.FC = () => {
         {/* Open Positions Section */}
         <Row className="mb-5">
           <Col>
-            <h2 className="text-dark text-center mb-4" style={{ fontWeight: "bold" }}>
-              Open Positions
-            </h2>
+            <h2 className="text-warning text-center mb-4 display-6">Open Positions</h2>
             <ul className="list-group list-group-flush text-center">
               {positions.map((position, index) => (
                 <li key={index} className="list-group-item fs-5 text-muted">
@@ -59,9 +55,7 @@ const Careers: React.FC = () => {
         {/* Why Work With Us Section */}
         <Row className="mb-5">
           <Col>
-            <h2 className="text-dark text-center mb-4" style={{ fontWeight: "bold" }}>
-              Why Work With Us?
-            </h2>
+            <h2 className="text-warning text-center mb-4 display-6">Why Work With Us?</h2>
             <p className="text-center text-muted fs-5">
               At ByteCity Tech, we offer a dynamic work environment, competitive salaries, 
               and opportunities for growth and development. Join a team that values 
@@ -73,9 +67,7 @@ const Careers: React.FC = () => {
         {/* How to Apply Section */}
         <Row className="mb-5">
           <Col>
-            <h2 className="text-dark text-center mb-4" style={{ fontWeight: "bold" }}>
-              How to Apply
-            </h2>
+            <h2 className="text-warning text-center mb-4 display-6">How to Apply</h2>
             <p className="text-center text-muted fs-5">
               Send your resume and cover letter to{" "}
               <a href="mailto:careers@bytecitytech.com" className="text-warning">
@@ -91,11 +83,9 @@ const Careers: React.FC = () => {
             <Button
               variant="warning"
               size="lg"
-              className="px-5"
+              className="px-5 py-3 fs-5"
               style={{ fontWeight: "bold" }}
-              onClick={() =>
-                (window.location.href = "mailto:careers@bytecitytech.com")
-              }
+              onClick={handleApplyNow}
             >
               Apply Now
             </Button>

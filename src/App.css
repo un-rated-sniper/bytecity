@@ -1,4 +1,4 @@
-/* Add your CSS styles here */
+/* Define Root Variables for Consistency */
 :root {
   --primary-color: #007bff;
   --secondary-color: #f7a800;
@@ -9,9 +9,10 @@
   --spacing-small: 10px;
   --spacing-medium: 20px;
   --spacing-large: 40px;
+  --orange: #ff7f00; /* Orange color for highlights */
 }
 
-/* General Styling */
+/* General Styles */
 body {
   font-family: var(--font-family);
   color: var(--dark-color);
@@ -121,25 +122,89 @@ p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .hero p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   #services .card-title {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 576px) {
   .hero {
-      height: auto;
-      padding: var(--spacing-medium);
+    height: auto;
+    padding: var(--spacing-medium);
   }
 
   #services {
-      padding: var(--spacing-medium) 0;
+    padding: var(--spacing-medium) 0;
+  }
+}
+
+/* Our Services Section */
+.our-services {
+  padding: 2rem 0;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.service-card .p-4 {
+  padding: 1.5rem;
+}
+
+/* Orange Checkmark for Service Lists */
+.service-list .list-group-item {
+  font-size: 1.2rem;
+}
+
+.service-list .list-group-item .me-3 {
+  margin-right: 0.75rem;
+}
+
+.service-list .list-group-item .check-icon {
+  color: var(--orange);
+}
+
+.service-list h2 {
+  font-size: 2rem;
+  color: var(--orange);
+  font-weight: bold;
+  text-align: center;
+}
+
+.service-list p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Responsive Adjustments for Service Cards */
+@media (max-width: 768px) {
+  .our-services h1 {
+    font-size: 2rem;
+  }
+
+  .our-services p {
+    font-size: 1.1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
   }
 }

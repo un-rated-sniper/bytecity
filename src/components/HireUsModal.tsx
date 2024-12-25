@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Modal, Button, Form, Row, Col } from "react-bootstrap";
 
-interface WorkWithUsModalProps {
+interface HireUsModalProps {
   show: boolean;
   handleClose: () => void;
 }
 
-const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) => {
+const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    section: 'Web Design',
-    description: '',
+    name: "",
+    email: "",
+    phone: "",
+    section: "Web Design",
+    description: "",
   });
 
   const handleInputChange: React.ChangeEventHandler<any> = (e) => {
@@ -29,11 +29,11 @@ const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) 
   };
 
   return (
-    <Modal show={show} onHide={handleClose} centered>
+    <Modal show={show} onHide={handleClose} centered size="lg">
       <Modal.Header closeButton>
         <Modal.Title
           className="text-center w-100"
-          style={{ color: 'orange', fontWeight: 'bold', fontSize: '1.8rem' }}
+          style={{ color: "orange", fontWeight: "bold", fontSize: "1.8rem" }}
         >
           Let's Work Together!
         </Modal.Title>
@@ -95,13 +95,10 @@ const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) 
                   value={formData.section}
                   onChange={handleInputChange}
                   className="p-2"
+                  style={{ maxHeight: "200px", overflowY: "auto" }} // Scrollable dropdown
                 >
-                  <optgroup label="ICT General">
-                    <option>Computer Sourcing</option>
-                    <option>Consultation</option>
-                    <option>Website Design</option>
-                  </optgroup>
                   <optgroup label="Graphic Design & Printing Services">
+                    <option>Business Cards</option>
                     <option>Adverts </option>
                     <option>Logos </option>
                     <option>Posters </option>
@@ -109,7 +106,11 @@ const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) 
                     <option>Receipts Book </option>
                     <option>Brochures</option>
                     <option>Branding of Merchandise</option>
-                    <option>Business Cards</option>
+                  </optgroup>
+                  <optgroup label="ICT General">
+                    <option>Computer Sourcing</option>
+                    <option>Consultation</option>
+                    <option>Website Design</option>
                   </optgroup>
                   <optgroup label="Social Media / Web Content Management">
                     <option>X (formerly Twitter)</option>
@@ -137,10 +138,10 @@ const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) 
           </Form.Group>
 
           <Form.Group controlId="formWhatsappLink" className="mt-3">
-            <Form.Label> Contact Us Through WhatsApp </Form.Label>
+            <Form.Label>Contact Us Through WhatsApp</Form.Label>
             <a
               href={`https://www.whatsapp.com/send?text=${encodeURIComponent(
-                'Contact Us Through WhatsApp'
+                "Contact Us Through WhatsApp"
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -164,4 +165,4 @@ const WorkWithUsModal: React.FC<WorkWithUsModalProps> = ({ show, handleClose }) 
   );
 };
 
-export default WorkWithUsModal;
+export default HireUsModal;

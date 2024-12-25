@@ -31,6 +31,7 @@ const TrainingHero = () => {
               className="mt-4"
               size="lg"
               style={{ fontWeight: 'bold', padding: '10px 20px' }}
+              onClick={() => window.location.href = '/training'}
             >
               Explore Courses
             </Button>

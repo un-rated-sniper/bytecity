@@ -1,7 +1,10 @@
-
 import { Container, Button, Row, Col, Carousel } from 'react-bootstrap';
+import { useState } from 'react';
+import HireUsModal from './HireUsModal';
 
 const Discover = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const images = [
     { src: 'image1.png', alt: 'Design 1' }, // Replace with your image paths
     { src: 'image2.png', alt: 'Design 2' },
@@ -37,9 +40,11 @@ const Discover = () => {
               size="lg"
               className="mt-4"
               style={{ fontWeight: 'bold', padding: '10px 20px' }}
+              onClick={() => setShowModal(true)}
             >
               HIRE US
             </Button>
+            <HireUsModal show={showModal} handleClose={() => setShowModal(false)} />
           </Col>
 
           {/* Carousel Section */}
