@@ -20,20 +20,14 @@ const ContactUs: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // handle form submission logic here
     console.log("Form Submitted", formData);
   };
 
   return (
     <div>
-      <Hero
-        onHireUsClick={() => {
-          /* handle hire us click */
-        }}
-      />
+      <Hero />
       <div className="container py-5">
         <div className="row">
-          {/* Contact Form Section */}
           <div className="col-lg-6 mb-4">
             <h5 className="text-warning mb-4 display-6">Contact Us</h5>
             <form onSubmit={handleSubmit}>
@@ -101,19 +95,19 @@ const ContactUs: React.FC = () => {
             {/* Social Media Links */}
             <div className="d-flex justify-content-start">
               <a href="#" className="text-dark me-3 fs-5">
-                <i className="bi bi-facebook" style={{ fontSize: '1.5rem' }}></i>
+                <i className="bi bi-facebook" style={{ fontSize: "1.5rem" }}></i>
                 <span className="ms-2">Facebook</span>
               </a>
               <a href="#" className="text-dark me-3 fs-5">
-                <i className="bi bi-twitter" style={{ fontSize: '1.5rem' }}></i>
+                <i className="bi bi-twitter" style={{ fontSize: "1.5rem" }}></i>
                 <span className="ms-2">Twitter</span>
               </a>
               <a href="#" className="text-dark me-3 fs-5">
-                <i className="bi bi-linkedin" style={{ fontSize: '1.5rem' }}></i>
+                <i className="bi bi-linkedin" style={{ fontSize: "1.5rem" }}></i>
                 <span className="ms-2">LinkedIn</span>
               </a>
               <a href="#" className="text-dark fs-5">
-                <i className="bi bi-whatsapp" style={{ fontSize: '1.5rem' }}></i>
+                <i className="bi bi-whatsapp" style={{ fontSize: "1.5rem" }}></i>
                 <span className="ms-2">WhatsApp</span>
               </a>
             </div>

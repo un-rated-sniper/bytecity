@@ -9,26 +9,25 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import TrainingHero from "../components/TrainingHero";
 import CustomAccordion from "../components/CustomAccordion";
 
-
 const Home: React.FC = () => {
-    const [showHireUsModal, setShowHireUsModal] = useState(false);
+  const [showHireUsModal, setShowHireUsModal] = useState(false);
 
-    const handleShowModal = () => setShowHireUsModal(true);
-    const handleCloseModal = () => setShowHireUsModal(false);
+  const handleShowModal = () => setShowHireUsModal(true);
+  const handleCloseModal = () => setShowHireUsModal(false);
 
-    return (
-        <div>
-            <Hero />
-            <Discover onHireUsClick={handleShowModal} />
-            <CustomAccordion/>
-            <Services />
-            <Message />
-            <WhyUs />
-            <TrainingHero />
-            <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
-            <WhyChooseUs />
-        </div>
-    );
+  return (
+    <div>
+      <Hero />
+      <Discover onHireUsClick={handleShowModal} /> {/* Pass the function here */}
+      <CustomAccordion />
+      <Services />
+      <Message />
+      <WhyUs />
+      <TrainingHero />
+      <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
+      <WhyChooseUs />
+    </div>
+  );
 };
 
 export default Home;

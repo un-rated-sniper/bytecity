@@ -25,7 +25,7 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    console.log(formData); // Handle form submission logic here
   };
 
   return (
@@ -99,11 +99,11 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
                 >
                   <optgroup label="Graphic Design & Printing Services">
                     <option>Business Cards</option>
-                    <option>Adverts </option>
-                    <option>Logos </option>
-                    <option>Posters </option>
-                    <option>Booklets </option>
-                    <option>Receipts Book </option>
+                    <option>Adverts</option>
+                    <option>Logos</option>
+                    <option>Posters</option>
+                    <option>Booklets</option>
+                    <option>Receipts Book</option>
                     <option>Brochures</option>
                     <option>Branding of Merchandise</option>
                   </optgroup>
@@ -153,10 +153,11 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
         </Form>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-center">
+        {/* The Submit Button should be inside the Form */}
         <Button
           variant="warning"
-          type="submit"
-          className="btn btn-warning d-block px-5 py-3"
+          type="submit" // Ensures it triggers the form submit
+          className="d-block px-5 py-3"
         >
           Submit
         </Button>

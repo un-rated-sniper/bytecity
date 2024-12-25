@@ -1,10 +1,12 @@
 import { Container, Button, Row, Col, Carousel } from 'react-bootstrap';
-import { useState } from 'react';
-import HireUsModal from './HireUsModal';
 
-const Discover = () => {
-  const [showModal, setShowModal] = useState(false);
 
+// Define the props for the Discover component
+interface DiscoverProps {
+  onHireUsClick: () => void;  // This will handle the modal opening
+}
+
+const Discover: React.FC<DiscoverProps> = ({ onHireUsClick }) => {
   const images = [
     { src: 'image1.png', alt: 'Design 1' }, // Replace with your image paths
     { src: 'image2.png', alt: 'Design 2' },
@@ -40,11 +42,10 @@ const Discover = () => {
               size="lg"
               className="mt-4"
               style={{ fontWeight: 'bold', padding: '10px 20px' }}
-              onClick={() => setShowModal(true)}
+              onClick={onHireUsClick}  // Use the passed down prop here
             >
               HIRE US
             </Button>
-            <HireUsModal show={showModal} handleClose={() => setShowModal(false)} />
           </Col>
 
           {/* Carousel Section */}
