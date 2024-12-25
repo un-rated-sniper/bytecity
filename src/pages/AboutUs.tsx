@@ -98,35 +98,7 @@ const AboutUs: React.FC = () => {
         </div>
       </div>
 
-      <style jsx global>{`
-        .object-fit-cover {
-          object-fit: cover;
-        }
-
-        @media (max-width: 768px) {
-          .card-body {
-            padding: 1rem;
-          }
-          .card-title {
-            font-size: 1.5rem;
-          }
-          .text-warning {
-            font-size: 1.2rem;
-          }
-        }
-
-        @media (max-width: 576px) {
-          .card-title {
-            font-size: 1.3rem;
-          }
-          .card-body p {
-            font-size: 0.9rem;
-          }
-          .text-warning {
-            font-size: 1rem;
-          }
-        }
-      `}</style>
+      
     </div>
   );
 };
