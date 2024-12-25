@@ -1,12 +1,12 @@
-// AboutUsHeader.tsx
+// OurServicesHeader.tsx
 import React from 'react';
 
-const AboutUsHeader: React.FC = () => {
+const OurServicesHeader: React.FC = () => {
   return (
     <div
       className="hero-container position-relative text-white"
       style={{
-        backgroundImage: 'url("work-hero-image.jpg")', // Replace with actual image path
+        backgroundImage: 'url("services-hero-image.jpg")', // Replace with actual image path
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '60vh',
@@ -19,20 +19,19 @@ const AboutUsHeader: React.FC = () => {
       <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-60"></div>
 
       <div className="container position-relative z-index-1">
-        <h1 className="display-4 text-light fw-bold">Our Team</h1>
+        <h1 className="display-4 text-light fw-bold">Our Services</h1>
         <p className="lead mb-4">
-          We are ByteCity Tech Solutions, delivering innovative and tailor-made technology solutions for your business.
+          Explore a range of services that will elevate your business, enhance your brand, and drive success.
         </p>
         <a
-          href="#"
+          href="#services"
           className="btn btn-primary btn-lg"
-          onClick={() => window.location.href = '/careers'}
         >
-          Join Our Team
+          Explore Services
         </a>
       </div>
     </div>
   );
 };
 
-export default AboutUsHeader;
+export default OurServicesHeader;

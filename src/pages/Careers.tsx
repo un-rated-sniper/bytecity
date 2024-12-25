@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Hero from "../components/Hero";
+import CareerHeader from "../components/CareerHeader";
 
 const Careers: React.FC = () => {
   const introText = `
@@ -27,7 +27,7 @@ const Careers: React.FC = () => {
   return (
     <div className="careers-page">
       {/* Hero Section */}
-      <Hero />
+      <CareerHeader />
 
       <Container className="py-5">
         {/* Introduction Section */}
