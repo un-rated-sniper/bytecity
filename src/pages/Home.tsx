@@ -5,7 +5,7 @@ import Services from "../components/Services";
 import Message from "../components/Message";
 import WhyUs from "../components/WhyUs";
 import HireUsModal from "../components/HireUsModal";
-import WhyChooseUs from "../components/WhyChooseUs";
+import PortfolioGallery from "../components/PortfolioGallery";
 import TrainingHero from "../components/TrainingHero";
 import CustomAccordion from "../components/CustomAccordion";
 
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
       <WhyUs />
       <TrainingHero />
       <HireUsModal show={showHireUsModal} handleClose={handleCloseModal} />
-      <WhyChooseUs />
+      <PortfolioGallery />
     </div>
   );
 };
