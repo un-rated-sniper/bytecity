@@ -40,14 +40,14 @@ const Hero: React.FC<HeroProps> = () => {
       <Container className="text-center text-lg-start position-relative z-index-1">
         {/* Hero Content */}
         <div className="hero-content">
-          <h1 className="display-4 fw-bold mb-2">
-            Transforming <span style={{ color: "orange" }}>{currentWord}</span>
+          <h1 className="display-4 fw-bold mb-3"> {/* Increased bottom margin */}
+          At ByteCity Tech We Transform <span style={{ color: "orange" }}>{currentWord}</span>
           </h1>
-          <h2 className="display-5 fw-bold mb-4">
-            into Innovative Solutions
+          <h2 className="display-5 fw-bold mb-4" style={{ marginTop: '20px' }}> {/* Added top margin */}
+            Into Innovative Solutions
           </h2>
           <p className="fs-5 mb-4">
-            At ByteCity Tech, we empower businesses by providing cutting-edge IT
+            We empower businesses by providing cutting-edge IT
             solutions that drive growth, efficiency, and innovation. Let's create
             the future, together.
           </p>

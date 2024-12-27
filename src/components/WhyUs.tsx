@@ -31,7 +31,7 @@ const WhyUs: React.FC = () => {
           {services.map((service, index) => (
             <Col xs={12} sm={6} md={4} key={index} className="my-3">
               <div className="icon-container">
-                <i className={`${service.icon} fa-3x text-info`} />
+                <i className={`${service.icon} fa-4x text-info`} style={{ padding: '20px' }} /> {/* Increased icon size */}
                 <h5 className="mt-3 text-secondary">{service.title}</h5>
                 <p className="text-muted">{service.text}</p>
               </div>
