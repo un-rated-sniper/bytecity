@@ -69,7 +69,7 @@ const PortfolioGallery = () => {
         </Row>
       </Container>
 
-      <style jsx>{`
+      <style>{`
         .transition-transform {
           transition: transform 0.3s ease-in-out;
         }
