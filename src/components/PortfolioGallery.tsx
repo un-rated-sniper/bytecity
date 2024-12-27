@@ -10,7 +10,8 @@ const PortfolioGallery = () => {
     '/images/photo5.png',
     '/images/photo6.png',
     '/images/photo7.png',
-    '/images/photo8.png', // Add as many photos as you need
+    '/images/photo8.png',
+    '/images/photo9.png', // Add as many photos as you need
   ];
 
   const [currentPhotos, setCurrentPhotos] = useState<string[]>([]);

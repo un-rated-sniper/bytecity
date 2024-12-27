@@ -5,7 +5,7 @@ const AboutUs: React.FC = () => {
   return (
     <div>
       <AboutUsHeader /> {/* Hero Header */}
-      
+
       {/* Section 1: About Us */}
       <div className="container py-5">
         <div className="text-center mb-5">
@@ -43,7 +43,9 @@ const AboutUs: React.FC = () => {
                   <div className="col-md-8">
                     <div className="card-body">
                       <h3 className="card-title text-warning">Agwata</h3>
-                      <h5 className="text-muted">Co-Founder and Tech Strategist</h5>
+                      <h5 className="text-muted">
+                        Co-Founder and Tech Strategist
+                      </h5>
                       <p>
                         Agwata brings a wealth of expertise as a web designer,
                         virtual assistant, technical support specialist, and certified
@@ -77,7 +79,9 @@ const AboutUs: React.FC = () => {
                   <div className="col-md-8">
                     <div className="card-body">
                       <h3 className="card-title text-warning">Dolphine</h3>
-                      <h5 className="text-muted">Designer and Creative Visionary</h5>
+                      <h5 className="text-muted">
+                        Designer and Creative Visionary
+                      </h5>
                       <p>
                         Dolphine is a certified Adobe designer with over 5 years of
                         professional experience in branding, designing, printing, and
@@ -95,32 +99,33 @@ const AboutUs: React.FC = () => {
               </div>
             </div>
 
-            {/* Ethanus' Profile */}
+            {/* Athanus's Profile */}
             <div className="col-lg-6 col-md-12 mb-4">
               <div className="card shadow-sm h-100">
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src="./aboutUs/ethanus-image.jpg" // Replace with actual image path
-                      alt="Ethanus"
+                      src="./aboutUs/athanus-image.jpg" // Replace with actual image path
+                      alt="Athanus"
                       className="img-fluid rounded-start h-100 object-fit-cover"
                     />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <h3 className="card-title text-warning">Ethanus</h3>
-                      <h5 className="text-muted">Professional Writer and Blogger</h5>
+                      <h3 className="card-title text-warning">Athanus</h3>
+                      <h5 className="text-muted">
+                        Professional Writer, Blogger, and Trainer
+                      </h5>
                       <p>
-                        Ethanus is a highly skilled writer with over a decade of
-                        experience in creating impactful blogs, technical documents,
-                        and professional content. His expertise in storytelling and
-                        research-driven writing sets him apart in the content creation
-                        industry.
+                        Athanus is an experienced writer and professional blogger
+                        with a passion for storytelling and technical accuracy.
+                        He is also a seasoned trainer in professional writing,
+                        helping clients articulate their ideas effectively.
                       </p>
                       <p>
-                        As a dedicated trainer in professional writing, Ethanus has
-                        mentored numerous individuals and teams, helping them
-                        communicate effectively and build compelling narratives.
+                        With years of experience in creative and technical writing,
+                        Athanus ensures that every project ByteCity handles meets the
+                        highest standards of quality and clarity.
                       </p>
                     </div>
                   </div>
@@ -142,17 +147,19 @@ const AboutUs: React.FC = () => {
                   <div className="col-md-8">
                     <div className="card-body">
                       <h3 className="card-title text-warning">Clinton</h3>
-                      <h5 className="text-muted">Professional Photographer and Social Media Icon</h5>
+                      <h5 className="text-muted">
+                        Professional Photographer and Content Creator
+                      </h5>
                       <p>
-                        Clinton is a world-class photographer, celebrated with three
-                        Grammy awards for his outstanding contributions to the creative
-                        arts. His ability to capture timeless moments and deliver
-                        visually stunning content makes him a true master of his craft.
+                        Clinton is a Grammy award-winning photographer with three
+                        accolades under his belt. A professional TikToker and
+                        Instagram content creator, he has an eye for capturing
+                        moments that resonate with audiences globally.
                       </p>
                       <p>
-                        A TikTok and Instagram professional, Clinton leverages social
-                        media platforms to inspire and connect with millions, blending
-                        creativity with storytelling to create unforgettable experiences.
+                        His photography skills and social media expertise make him an
+                        invaluable asset to ByteCity, crafting compelling visual
+                        narratives for our clients.
                       </p>
                     </div>
                   </div>
@@ -160,6 +167,39 @@ const AboutUs: React.FC = () => {
               </div>
             </div>
 
+            {/* Victor's Profile */}
+            <div className="col-lg-6 col-md-12 mb-4">
+              <div className="card shadow-sm h-100">
+                <div className="row g-0">
+                  <div className="col-md-4">
+                    <img
+                      src="./aboutUs/victor-image.jpg" // Replace with actual image path
+                      alt="Victor"
+                      className="img-fluid rounded-start h-100 object-fit-cover"
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <h3 className="card-title text-warning">Victor</h3>
+                      <h5 className="text-muted">
+                        Graphic Designer and Professional Trainer
+                      </h5>
+                      <p>
+                        Victor is a seasoned graphic designer with years of
+                        professional experience in creating impactful visuals. He is
+                        also a dedicated trainer, mentoring aspiring designers in the
+                        art of creating compelling digital content.
+                      </p>
+                      <p>
+                        His expertise in branding, visual storytelling, and training
+                        ensures ByteCity delivers exceptional creative solutions for
+                        clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
