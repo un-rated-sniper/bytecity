@@ -35,7 +35,7 @@ const AboutUs: React.FC = () => {
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src="path-to-agwata-image.jpg" // Replace with actual image path
+                      src="./aboutUs/agwata-image.jpg" // Replace with actual image path
                       alt="Agwata"
                       className="img-fluid rounded-start h-100 object-fit-cover"
                     />
@@ -69,7 +69,7 @@ const AboutUs: React.FC = () => {
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src="path-to-dolphine-image.jpg" // Replace with actual image path
+                      src="./aboutUs/dee-image.jpg" // Replace with actual image path
                       alt="Dolphine"
                       className="img-fluid rounded-start h-100 object-fit-cover"
                     />
@@ -94,11 +94,75 @@ const AboutUs: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Ethanus' Profile */}
+            <div className="col-lg-6 col-md-12 mb-4">
+              <div className="card shadow-sm h-100">
+                <div className="row g-0">
+                  <div className="col-md-4">
+                    <img
+                      src="./aboutUs/ethanus-image.jpg" // Replace with actual image path
+                      alt="Ethanus"
+                      className="img-fluid rounded-start h-100 object-fit-cover"
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <h3 className="card-title text-warning">Ethanus</h3>
+                      <h5 className="text-muted">Professional Writer and Blogger</h5>
+                      <p>
+                        Ethanus is a highly skilled writer with over a decade of
+                        experience in creating impactful blogs, technical documents,
+                        and professional content. His expertise in storytelling and
+                        research-driven writing sets him apart in the content creation
+                        industry.
+                      </p>
+                      <p>
+                        As a dedicated trainer in professional writing, Ethanus has
+                        mentored numerous individuals and teams, helping them
+                        communicate effectively and build compelling narratives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Clinton's Profile */}
+            <div className="col-lg-6 col-md-12 mb-4">
+              <div className="card shadow-sm h-100">
+                <div className="row g-0">
+                  <div className="col-md-4">
+                    <img
+                      src="./aboutUs/clinton-image.jpg" // Replace with actual image path
+                      alt="Clinton"
+                      className="img-fluid rounded-start h-100 object-fit-cover"
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <h3 className="card-title text-warning">Clinton</h3>
+                      <h5 className="text-muted">Professional Photographer and Social Media Icon</h5>
+                      <p>
+                        Clinton is a world-class photographer, celebrated with three
+                        Grammy awards for his outstanding contributions to the creative
+                        arts. His ability to capture timeless moments and deliver
+                        visually stunning content makes him a true master of his craft.
+                      </p>
+                      <p>
+                        A TikTok and Instagram professional, Clinton leverages social
+                        media platforms to inspire and connect with millions, blending
+                        creativity with storytelling to create unforgettable experiences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };
