@@ -30,7 +30,7 @@ const trainingData = [
     title: 'Intro to Photography and Videography',
     description:
       'Our Intro to Photography and Videography course will teach you the fundamental skills needed to capture stunning images and videos. Learn how to use a camera effectively, compose beautiful shots, and edit your photos and videos with the latest software. This course is ideal for beginners looking to get into photography and videography or enhance their existing skills.',
-    image: 'photography-videography.png',
+    image: 'photography-videography.jpg',
     buttonText: 'Join a Class',
     reverse: true,
   },
