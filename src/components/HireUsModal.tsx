@@ -150,18 +150,18 @@ const HireUsModal: React.FC<HireUsModalProps> = ({ show, handleClose }) => {
               Contact Us Through WhatsApp
             </a>
           </Form.Group>
+
+          <div className="d-flex justify-content-center mt-4">
+            <Button
+              variant="warning"
+              type="submit" // Ensures it triggers the form submit
+              className="d-block px-5 py-3"
+            >
+              Submit
+            </Button>
+          </div>
         </Form>
       </Modal.Body>
-      <Modal.Footer className="d-flex justify-content-center">
-        {/* The Submit Button should be inside the Form */}
-        <Button
-          variant="warning"
-          type="submit" // Ensures it triggers the form submit
-          className="d-block px-5 py-3"
-        >
-          Submit
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 };

@@ -51,27 +51,21 @@ const TrainingSection = ({
 }) => (
   <Row
     className={`align-items-center mb-5 ${reverse ? 'flex-lg-row-reverse' : ''}`}
+    style={{ rowGap: '20px' }}
   >
-    <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0 px-3">
+    <Col lg={6} md={12} className="text-center text-lg-start px-3">
       <h3 className="text-warning fw-bold mb-3">{title}</h3>
-      <p className="text-muted fs-5 mb-4">{description}</p>
-      <Button
-        variant="warning"
-        className="mt-3 px-4 py-2 fw-bold rounded-3 shadow-sm"
-      >
+      <p className="text-muted">{description}</p>
+      <Button variant="warning" className="mt-3">
         {buttonText}
       </Button>
     </Col>
-    <Col lg={6} className="d-flex justify-content-center px-3">
+    <Col lg={6} md={12} className="d-flex justify-content-center px-3">
       <img
         src={image}
-        alt={title}
-        className="img-fluid rounded shadow-lg"
-        style={{
-          maxHeight: '400px',
-          objectFit: 'cover',
-          borderRadius: '10px',
-        }}
+        alt={`${title} Course Image`}
+        className="img-fluid rounded"
+        style={{ maxHeight: '350px', objectFit: 'cover' }}
       />
     </Col>
   </Row>
@@ -79,10 +73,7 @@ const TrainingSection = ({
 
 const Training = () => {
   return (
-    <section
-      className="training-section py-5 bg-light my-5"
-      id="training"
-    >
+    <section className="training py-5 bg-light my-5" id="training">
       <TrainingHero />
       <Container className="py-4">
         {trainingData.map((item, index) => (
